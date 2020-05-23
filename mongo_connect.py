@@ -4,7 +4,7 @@ import pymongo
 Creating a database
 '''
 # ****Be ware that your database won't be created until you insert the first data into a collection*****
-myclient = pymongo.MongoClient("mongodb://127.0.0.1:27017/") # connect to local mongodb
+myclient = pymongo.MongoClient("mongodb://127.0.0.1:27017/") # connect to local mongodb(yours might be different)
 
 mydb = myclient["pythonDb"] # creates database 
 mycol = mydb["customers"] # crate collection in mydb
